@@ -64,8 +64,9 @@ namespace atvlanchonete2209
             this.iconCardapio.FlatAppearance.BorderSize = 0;
             this.iconCardapio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconCardapio.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconCardapio.ForeColor = System.Drawing.Color.White;
             this.iconCardapio.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
-            this.iconCardapio.IconColor = System.Drawing.Color.Black;
+            this.iconCardapio.IconColor = System.Drawing.Color.White;
             this.iconCardapio.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCardapio.IconSize = 35;
             this.iconCardapio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -86,8 +87,9 @@ namespace atvlanchonete2209
             this.iconPedido.FlatAppearance.BorderSize = 0;
             this.iconPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconPedido.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconPedido.ForeColor = System.Drawing.Color.White;
             this.iconPedido.IconChar = FontAwesome.Sharp.IconChar.PollH;
-            this.iconPedido.IconColor = System.Drawing.Color.Black;
+            this.iconPedido.IconColor = System.Drawing.Color.White;
             this.iconPedido.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPedido.IconSize = 35;
             this.iconPedido.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -108,8 +110,9 @@ namespace atvlanchonete2209
             this.iconCadastrarCliente.FlatAppearance.BorderSize = 0;
             this.iconCadastrarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconCadastrarCliente.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconCadastrarCliente.ForeColor = System.Drawing.Color.White;
             this.iconCadastrarCliente.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
-            this.iconCadastrarCliente.IconColor = System.Drawing.Color.Black;
+            this.iconCadastrarCliente.IconColor = System.Drawing.Color.White;
             this.iconCadastrarCliente.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCadastrarCliente.IconSize = 35;
             this.iconCadastrarCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -149,6 +152,7 @@ namespace atvlanchonete2209
             this.panel3.BackColor = System.Drawing.Color.SlateBlue;
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.ForeColor = System.Drawing.Color.White;
             this.panel3.Location = new System.Drawing.Point(193, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(607, 478);

@@ -31,27 +31,27 @@ namespace atvlanchonete2209
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedido));
             this.panel3 = new System.Windows.Forms.Panel();
+            this.buttonSalvar = new System.Windows.Forms.Button();
+            this.textLanche = new System.Windows.Forms.TextBox();
+            this.textBebida = new System.Windows.Forms.TextBox();
+            this.labelLanche = new System.Windows.Forms.Label();
+            this.labelBebida = new System.Windows.Forms.Label();
+            this.labelTitulo = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.labelPedido = new System.Windows.Forms.Label();
+            this.iconePedido = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconCardapio = new FontAwesome.Sharp.IconButton();
             this.iconPedido = new FontAwesome.Sharp.IconButton();
             this.iconCadastrarCliente = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelPedido = new System.Windows.Forms.Label();
-            this.iconePedido = new FontAwesome.Sharp.IconPictureBox();
-            this.labelTitulo = new System.Windows.Forms.Label();
-            this.labelBebida = new System.Windows.Forms.Label();
-            this.labelLanche = new System.Windows.Forms.Label();
-            this.textBebida = new System.Windows.Forms.TextBox();
-            this.textLanche = new System.Windows.Forms.TextBox();
-            this.buttonSalvar = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconePedido)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconePedido)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -70,6 +70,63 @@ namespace atvlanchonete2209
             this.panel3.Size = new System.Drawing.Size(607, 450);
             this.panel3.TabIndex = 3;
             // 
+            // buttonSalvar
+            // 
+            this.buttonSalvar.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSalvar.ForeColor = System.Drawing.Color.White;
+            this.buttonSalvar.Location = new System.Drawing.Point(236, 276);
+            this.buttonSalvar.Name = "buttonSalvar";
+            this.buttonSalvar.Size = new System.Drawing.Size(75, 23);
+            this.buttonSalvar.TabIndex = 6;
+            this.buttonSalvar.Text = "Salvar pedido";
+            this.buttonSalvar.UseVisualStyleBackColor = false;
+            // 
+            // textLanche
+            // 
+            this.textLanche.Location = new System.Drawing.Point(223, 224);
+            this.textLanche.Name = "textLanche";
+            this.textLanche.Size = new System.Drawing.Size(100, 23);
+            this.textLanche.TabIndex = 5;
+            // 
+            // textBebida
+            // 
+            this.textBebida.Location = new System.Drawing.Point(223, 170);
+            this.textBebida.Name = "textBebida";
+            this.textBebida.Size = new System.Drawing.Size(100, 23);
+            this.textBebida.TabIndex = 4;
+            // 
+            // labelLanche
+            // 
+            this.labelLanche.AutoSize = true;
+            this.labelLanche.ForeColor = System.Drawing.Color.White;
+            this.labelLanche.Location = new System.Drawing.Point(131, 227);
+            this.labelLanche.Name = "labelLanche";
+            this.labelLanche.Size = new System.Drawing.Size(86, 15);
+            this.labelLanche.TabIndex = 3;
+            this.labelLanche.Text = "Digite o lanche";
+            // 
+            // labelBebida
+            // 
+            this.labelBebida.AutoSize = true;
+            this.labelBebida.ForeColor = System.Drawing.Color.White;
+            this.labelBebida.Location = new System.Drawing.Point(131, 173);
+            this.labelBebida.Name = "labelBebida";
+            this.labelBebida.Size = new System.Drawing.Size(86, 15);
+            this.labelBebida.TabIndex = 2;
+            this.labelBebida.Text = "Digite a bebida";
+            // 
+            // labelTitulo
+            // 
+            this.labelTitulo.AutoSize = true;
+            this.labelTitulo.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelTitulo.ForeColor = System.Drawing.Color.White;
+            this.labelTitulo.Location = new System.Drawing.Point(196, 121);
+            this.labelTitulo.Name = "labelTitulo";
+            this.labelTitulo.Size = new System.Drawing.Size(152, 28);
+            this.labelTitulo.TabIndex = 1;
+            this.labelTitulo.Text = "Faça seu pedido";
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.DarkSlateBlue;
@@ -80,6 +137,30 @@ namespace atvlanchonete2209
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(607, 100);
             this.panel4.TabIndex = 0;
+            // 
+            // labelPedido
+            // 
+            this.labelPedido.AutoSize = true;
+            this.labelPedido.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPedido.ForeColor = System.Drawing.Color.White;
+            this.labelPedido.Location = new System.Drawing.Point(85, 39);
+            this.labelPedido.Name = "labelPedido";
+            this.labelPedido.Size = new System.Drawing.Size(122, 28);
+            this.labelPedido.TabIndex = 3;
+            this.labelPedido.Text = "fazer pedido";
+            // 
+            // iconePedido
+            // 
+            this.iconePedido.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.iconePedido.IconChar = FontAwesome.Sharp.IconChar.PollH;
+            this.iconePedido.IconColor = System.Drawing.Color.White;
+            this.iconePedido.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconePedido.IconSize = 53;
+            this.iconePedido.Location = new System.Drawing.Point(36, 30);
+            this.iconePedido.Name = "iconePedido";
+            this.iconePedido.Size = new System.Drawing.Size(53, 53);
+            this.iconePedido.TabIndex = 2;
+            this.iconePedido.TabStop = false;
             // 
             // panel1
             // 
@@ -101,8 +182,9 @@ namespace atvlanchonete2209
             this.iconCardapio.FlatAppearance.BorderSize = 0;
             this.iconCardapio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconCardapio.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconCardapio.ForeColor = System.Drawing.Color.White;
             this.iconCardapio.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
-            this.iconCardapio.IconColor = System.Drawing.Color.Black;
+            this.iconCardapio.IconColor = System.Drawing.Color.White;
             this.iconCardapio.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCardapio.IconSize = 35;
             this.iconCardapio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -123,8 +205,9 @@ namespace atvlanchonete2209
             this.iconPedido.FlatAppearance.BorderSize = 0;
             this.iconPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconPedido.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconPedido.ForeColor = System.Drawing.Color.White;
             this.iconPedido.IconChar = FontAwesome.Sharp.IconChar.PollH;
-            this.iconPedido.IconColor = System.Drawing.Color.Black;
+            this.iconPedido.IconColor = System.Drawing.Color.White;
             this.iconPedido.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPedido.IconSize = 35;
             this.iconPedido.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -144,8 +227,9 @@ namespace atvlanchonete2209
             this.iconCadastrarCliente.FlatAppearance.BorderSize = 0;
             this.iconCadastrarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconCadastrarCliente.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconCadastrarCliente.ForeColor = System.Drawing.Color.White;
             this.iconCadastrarCliente.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
-            this.iconCadastrarCliente.IconColor = System.Drawing.Color.Black;
+            this.iconCadastrarCliente.IconColor = System.Drawing.Color.White;
             this.iconCadastrarCliente.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCadastrarCliente.IconSize = 35;
             this.iconCadastrarCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -181,83 +265,6 @@ namespace atvlanchonete2209
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // labelPedido
-            // 
-            this.labelPedido.AutoSize = true;
-            this.labelPedido.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelPedido.Location = new System.Drawing.Point(85, 39);
-            this.labelPedido.Name = "labelPedido";
-            this.labelPedido.Size = new System.Drawing.Size(122, 28);
-            this.labelPedido.TabIndex = 3;
-            this.labelPedido.Text = "fazer pedido";
-            // 
-            // iconePedido
-            // 
-            this.iconePedido.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.iconePedido.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconePedido.IconChar = FontAwesome.Sharp.IconChar.PollH;
-            this.iconePedido.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconePedido.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconePedido.IconSize = 53;
-            this.iconePedido.Location = new System.Drawing.Point(36, 30);
-            this.iconePedido.Name = "iconePedido";
-            this.iconePedido.Size = new System.Drawing.Size(53, 53);
-            this.iconePedido.TabIndex = 2;
-            this.iconePedido.TabStop = false;
-            // 
-            // labelTitulo
-            // 
-            this.labelTitulo.AutoSize = true;
-            this.labelTitulo.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelTitulo.Location = new System.Drawing.Point(196, 121);
-            this.labelTitulo.Name = "labelTitulo";
-            this.labelTitulo.Size = new System.Drawing.Size(152, 28);
-            this.labelTitulo.TabIndex = 1;
-            this.labelTitulo.Text = "Faça seu pedido";
-            // 
-            // labelBebida
-            // 
-            this.labelBebida.AutoSize = true;
-            this.labelBebida.Location = new System.Drawing.Point(131, 173);
-            this.labelBebida.Name = "labelBebida";
-            this.labelBebida.Size = new System.Drawing.Size(86, 15);
-            this.labelBebida.TabIndex = 2;
-            this.labelBebida.Text = "Digite a bebida";
-            // 
-            // labelLanche
-            // 
-            this.labelLanche.AutoSize = true;
-            this.labelLanche.Location = new System.Drawing.Point(131, 227);
-            this.labelLanche.Name = "labelLanche";
-            this.labelLanche.Size = new System.Drawing.Size(86, 15);
-            this.labelLanche.TabIndex = 3;
-            this.labelLanche.Text = "Digite o lanche";
-            // 
-            // textBebida
-            // 
-            this.textBebida.Location = new System.Drawing.Point(223, 170);
-            this.textBebida.Name = "textBebida";
-            this.textBebida.Size = new System.Drawing.Size(100, 23);
-            this.textBebida.TabIndex = 4;
-            // 
-            // textLanche
-            // 
-            this.textLanche.Location = new System.Drawing.Point(223, 224);
-            this.textLanche.Name = "textLanche";
-            this.textLanche.Size = new System.Drawing.Size(100, 23);
-            this.textLanche.TabIndex = 5;
-            // 
-            // buttonSalvar
-            // 
-            this.buttonSalvar.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSalvar.Location = new System.Drawing.Point(236, 276);
-            this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(75, 23);
-            this.buttonSalvar.TabIndex = 6;
-            this.buttonSalvar.Text = "Salvar pedido";
-            this.buttonSalvar.UseVisualStyleBackColor = false;
-            // 
             // Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -266,16 +273,17 @@ namespace atvlanchonete2209
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "Pedido";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedido";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconePedido)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconePedido)).EndInit();
             this.ResumeLayout(false);
 
         }

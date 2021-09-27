@@ -35,7 +35,6 @@ namespace atvlanchonete2209
             Home home = new Home();
             home.Show();
             this.Hide();
-
         }
     }
 }

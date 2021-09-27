@@ -53,6 +53,7 @@ namespace atvlanchonete2209
             this.panel3.BackColor = System.Drawing.Color.SlateBlue;
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.ForeColor = System.Drawing.Color.White;
             this.panel3.Location = new System.Drawing.Point(193, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(607, 450);
@@ -73,18 +74,19 @@ namespace atvlanchonete2209
             // 
             this.labelCardapio.AutoSize = true;
             this.labelCardapio.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelCardapio.ForeColor = System.Drawing.Color.White;
             this.labelCardapio.Location = new System.Drawing.Point(102, 39);
             this.labelCardapio.Name = "labelCardapio";
             this.labelCardapio.Size = new System.Drawing.Size(121, 28);
             this.labelCardapio.TabIndex = 3;
             this.labelCardapio.Text = "ver cardápio";
+            this.labelCardapio.Click += new System.EventHandler(this.labelCardapio_Click);
             // 
             // iconcardap
             // 
             this.iconcardap.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.iconcardap.ForeColor = System.Drawing.SystemColors.ControlText;
             this.iconcardap.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
-            this.iconcardap.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconcardap.IconColor = System.Drawing.Color.White;
             this.iconcardap.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconcardap.IconSize = 53;
             this.iconcardap.Location = new System.Drawing.Point(53, 30);
@@ -92,6 +94,7 @@ namespace atvlanchonete2209
             this.iconcardap.Size = new System.Drawing.Size(53, 53);
             this.iconcardap.TabIndex = 2;
             this.iconcardap.TabStop = false;
+            this.iconcardap.Click += new System.EventHandler(this.iconcardap_Click);
             // 
             // panel1
             // 
@@ -113,8 +116,9 @@ namespace atvlanchonete2209
             this.iconCardapio.FlatAppearance.BorderSize = 0;
             this.iconCardapio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconCardapio.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconCardapio.ForeColor = System.Drawing.Color.White;
             this.iconCardapio.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
-            this.iconCardapio.IconColor = System.Drawing.Color.Black;
+            this.iconCardapio.IconColor = System.Drawing.Color.White;
             this.iconCardapio.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCardapio.IconSize = 35;
             this.iconCardapio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -126,6 +130,7 @@ namespace atvlanchonete2209
             this.iconCardapio.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.iconCardapio.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.iconCardapio.UseVisualStyleBackColor = true;
+            this.iconCardapio.Click += new System.EventHandler(this.iconCardapio_Click);
             // 
             // iconPedido
             // 
@@ -134,8 +139,9 @@ namespace atvlanchonete2209
             this.iconPedido.FlatAppearance.BorderSize = 0;
             this.iconPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconPedido.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconPedido.ForeColor = System.Drawing.Color.White;
             this.iconPedido.IconChar = FontAwesome.Sharp.IconChar.PollH;
-            this.iconPedido.IconColor = System.Drawing.Color.Black;
+            this.iconPedido.IconColor = System.Drawing.Color.White;
             this.iconPedido.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPedido.IconSize = 35;
             this.iconPedido.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -147,6 +153,7 @@ namespace atvlanchonete2209
             this.iconPedido.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.iconPedido.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconPedido.UseVisualStyleBackColor = true;
+            this.iconPedido.Click += new System.EventHandler(this.iconPedido_Click);
             // 
             // iconCadastrarCliente
             // 
@@ -155,8 +162,9 @@ namespace atvlanchonete2209
             this.iconCadastrarCliente.FlatAppearance.BorderSize = 0;
             this.iconCadastrarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconCadastrarCliente.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconCadastrarCliente.ForeColor = System.Drawing.Color.White;
             this.iconCadastrarCliente.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
-            this.iconCadastrarCliente.IconColor = System.Drawing.Color.Black;
+            this.iconCadastrarCliente.IconColor = System.Drawing.Color.White;
             this.iconCadastrarCliente.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCadastrarCliente.IconSize = 35;
             this.iconCadastrarCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -168,6 +176,7 @@ namespace atvlanchonete2209
             this.iconCadastrarCliente.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.iconCadastrarCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconCadastrarCliente.UseVisualStyleBackColor = true;
+            this.iconCadastrarCliente.Click += new System.EventHandler(this.iconCadastrarCliente_Click);
             // 
             // panel2
             // 
@@ -189,6 +198,7 @@ namespace atvlanchonete2209
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Cardapio
             // 

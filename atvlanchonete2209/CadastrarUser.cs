@@ -9,12 +9,12 @@ using System.Windows.Forms;
 namespace atvlanchonete2209
 {
     public partial class CadastrarUser : Form
-    {
+    { 
         public CadastrarUser()
         {
             InitializeComponent();
         }
-
+      
         private void iconEntrar_Click(object sender, EventArgs e)
         {
             Entrar entrar = new Entrar();
@@ -29,5 +29,6 @@ namespace atvlanchonete2209
             home.Show();
             this.Hide();
         }
+
     }
 }

@@ -14,5 +14,45 @@ namespace atvlanchonete2209
         {
             InitializeComponent();
         }
+
+        private void iconCadastrarCliente_Click(object sender, EventArgs e)
+        {
+            CadastrarCliente cadastrarCliente = new CadastrarCliente();
+            cadastrarCliente.Show();
+            this.Hide();
+        }
+
+        private void iconPedido_Click(object sender, EventArgs e)
+        {
+            Pedido pedido = new Pedido();
+            pedido.Show();
+            this.Hide();
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
+            this.Hide();
+
+        }
+
+
+
+        private void labelCardapio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconcardap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconCardapio_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

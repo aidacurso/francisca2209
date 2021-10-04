@@ -38,6 +38,7 @@ namespace atvlanchonete2209
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.iconCadastrar = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -47,14 +48,16 @@ namespace atvlanchonete2209
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.Controls.Add(this.iconCadastrar);
             this.panel1.Controls.Add(this.iconCardapio);
             this.panel1.Controls.Add(this.iconPedido);
             this.panel1.Controls.Add(this.iconCadastrarCliente);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(193, 478);
+            this.panel1.Size = new System.Drawing.Size(221, 637);
             this.panel1.TabIndex = 0;
             // 
             // iconCardapio
@@ -70,9 +73,10 @@ namespace atvlanchonete2209
             this.iconCardapio.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCardapio.IconSize = 35;
             this.iconCardapio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconCardapio.Location = new System.Drawing.Point(0, 276);
+            this.iconCardapio.Location = new System.Drawing.Point(0, 367);
+            this.iconCardapio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconCardapio.Name = "iconCardapio";
-            this.iconCardapio.Size = new System.Drawing.Size(193, 49);
+            this.iconCardapio.Size = new System.Drawing.Size(221, 65);
             this.iconCardapio.TabIndex = 4;
             this.iconCardapio.Text = "ver cardápio";
             this.iconCardapio.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -93,9 +97,10 @@ namespace atvlanchonete2209
             this.iconPedido.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPedido.IconSize = 35;
             this.iconPedido.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconPedido.Location = new System.Drawing.Point(0, 227);
+            this.iconPedido.Location = new System.Drawing.Point(0, 302);
+            this.iconPedido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconPedido.Name = "iconPedido";
-            this.iconPedido.Size = new System.Drawing.Size(193, 49);
+            this.iconPedido.Size = new System.Drawing.Size(221, 65);
             this.iconPedido.TabIndex = 3;
             this.iconPedido.Text = "fazer pedido";
             this.iconPedido.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -116,9 +121,10 @@ namespace atvlanchonete2209
             this.iconCadastrarCliente.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCadastrarCliente.IconSize = 35;
             this.iconCadastrarCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconCadastrarCliente.Location = new System.Drawing.Point(0, 178);
+            this.iconCadastrarCliente.Location = new System.Drawing.Point(0, 237);
+            this.iconCadastrarCliente.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconCadastrarCliente.Name = "iconCadastrarCliente";
-            this.iconCadastrarCliente.Size = new System.Drawing.Size(193, 49);
+            this.iconCadastrarCliente.Size = new System.Drawing.Size(221, 65);
             this.iconCadastrarCliente.TabIndex = 2;
             this.iconCadastrarCliente.Text = "cadastrar cliente";
             this.iconCadastrarCliente.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -132,17 +138,19 @@ namespace atvlanchonete2209
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(193, 178);
+            this.panel2.Size = new System.Drawing.Size(221, 237);
             this.panel2.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(30, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(34, 40);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(135, 119);
+            this.pictureBox1.Size = new System.Drawing.Size(154, 159);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -153,9 +161,10 @@ namespace atvlanchonete2209
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.ForeColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(193, 0);
+            this.panel3.Location = new System.Drawing.Point(221, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(607, 478);
+            this.panel3.Size = new System.Drawing.Size(693, 637);
             this.panel3.TabIndex = 1;
             // 
             // panel4
@@ -163,17 +172,43 @@ namespace atvlanchonete2209
             this.panel4.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(607, 100);
+            this.panel4.Size = new System.Drawing.Size(693, 133);
             this.panel4.TabIndex = 0;
+            // 
+            // iconCadastrar
+            // 
+            this.iconCadastrar.AutoSize = true;
+            this.iconCadastrar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconCadastrar.FlatAppearance.BorderSize = 0;
+            this.iconCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconCadastrar.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconCadastrar.ForeColor = System.Drawing.Color.White;
+            this.iconCadastrar.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
+            this.iconCadastrar.IconColor = System.Drawing.Color.White;
+            this.iconCadastrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconCadastrar.IconSize = 35;
+            this.iconCadastrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconCadastrar.Location = new System.Drawing.Point(0, 432);
+            this.iconCadastrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.iconCadastrar.Name = "iconCadastrar";
+            this.iconCadastrar.Size = new System.Drawing.Size(221, 65);
+            this.iconCadastrar.TabIndex = 6;
+            this.iconCadastrar.Text = "novo login";
+            this.iconCadastrar.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.iconCadastrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconCadastrar.UseVisualStyleBackColor = true;
+            this.iconCadastrar.Click += new System.EventHandler(this.iconCadastrar_Click);
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 478);
+            this.ClientSize = new System.Drawing.Size(914, 637);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Entrar";
@@ -196,6 +231,7 @@ namespace atvlanchonete2209
         private FontAwesome.Sharp.IconButton iconCardapio;
         private FontAwesome.Sharp.IconButton iconPedido;
         private FontAwesome.Sharp.IconButton iconCadastrarCliente;
+        private FontAwesome.Sharp.IconButton iconCadastrar;
     }
 }
 

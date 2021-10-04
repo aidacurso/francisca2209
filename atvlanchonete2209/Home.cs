@@ -50,5 +50,13 @@ namespace atvlanchonete2209
 
 
         }
+
+        private void iconCadastrar_Click(object sender, EventArgs e)
+        {
+
+            CadastrarUser cadastrarUser = new CadastrarUser();
+            cadastrarUser.Show();
+            this.Hide();
+        }
     }
 }

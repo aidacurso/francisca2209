@@ -7,39 +7,41 @@ using System.Windows.Forms;
 
 namespace atvlanchonete2209
 {
-    class User
+    class Pedir
     {
-        public string NomeUser { get; set; }
-        public string SenhaUser { get; set; }
+        public int IDPedido { get; set; }
+        public string NomePedido { get; set; }
+        public double PrecoPedido { get; set; }
 
-        public User() { }
-        public User(int id, string nome, string telefone)
+        public Pedir() { }
+        public Pedir(int id, string nome, string preco)
         {
-            NomeUser = nome;
-            SenhaUser = telefone;
+            IDPedido = id;
+            NomePedido = nome;
+            PrecoPedido = double.Parse(preco);
         }
-        public bool SalvarDadosUser(List<User> cliente, string path)
+        public bool SalvarDadosPedido(List<Pedir> cliente, string path)
         {
             var strJson = JsonConvert.SerializeObject(cliente);
-            return SalvarArquivoUser(strJson, path);
+            return SalvarArquivoPedido(strJson, path);
         }
-        public static User ListarUser(string path)
+        public static Pedir ListarPedido(string path)
         {
-            var strJson = OpenFileUser(path);
+            var strJson = OpenFilePedido(path);
             if (strJson.Substring(0, 5) != "falha")
             {
-                return JsonConvert.DeserializeObject<User>(strJson);
+                return JsonConvert.DeserializeObject<Pedir>(strJson);
 
             }
             else
             {
-                var user = new User();
-                user.NomeUser = strJson;
-                return user;
+                var pedido = new Pedir();
+                pedido.NomePedido = strJson;
+                return pedido;
 
             }
         }
-        public bool SalvarArquivoUser(string strJson, string path)
+        public bool SalvarArquivoPedido(string strJson, string path)
         {
             try
             {
@@ -55,7 +57,7 @@ namespace atvlanchonete2209
                 return false;
             }
         }
-        private static string OpenFileUser(string path)
+        private static string OpenFilePedido(string path)
         {
             try
             {
@@ -72,21 +74,21 @@ namespace atvlanchonete2209
             }
         }
 
-        public static List<User> carregarUser(string path)
+        public static List<Pedir> carregarPedido(string path)
         {
-            var strJson = OpenFileUser(path);
+            var strJson = OpenFilePedido(path);
             if (strJson.Substring(0, 5) != "falha")
             {
-                return JsonConvert.DeserializeObject<List<User>>(strJson);
+                return JsonConvert.DeserializeObject<List<Pedir>>(strJson);
             }
             else
             {
-                var listUser = new List<User>();
-                var user = new User();
-                user.NomeUser = strJson;
-                listUser.Add(user);
-                user.NomeUser = strJson;
-                return listUser;
+                var listPedido = new List<Pedir>();
+                var pedido = new Pedir();
+                pedido.NomePedido = strJson;
+                listPedido.Add(pedido);
+                pedido.NomePedido = strJson;
+                return listPedido;
             }
         }
     }

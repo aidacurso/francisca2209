@@ -11,14 +11,14 @@ namespace atvlanchonete2209
     public class Cliente
     {
         public int IDCliente { get; set; }
-        public string NomeUser { get; set; }
+        public string NomeCliente { get; set; }
         public string TelefoneCliente { get; set; }
 
         public Cliente() { }
         public Cliente(int id, string nome, string telefone)
         {
             IDCliente = id;
-            NomeUser = nome;
+            NomeCliente = nome;
             TelefoneCliente = telefone;
         }
         public bool SalvarDadosCliente(List<Cliente> cliente, string path)
@@ -37,7 +37,7 @@ namespace atvlanchonete2209
             else
             {
                 var cliente = new Cliente();
-                cliente.NomeUser = strJson;
+                cliente.NomeCliente = strJson;
                 return cliente;
 
             }
@@ -86,9 +86,9 @@ namespace atvlanchonete2209
             {
                 var listClientes = new List<Cliente>();
                 var cliente = new Cliente();
-                cliente.NomeUser = strJson;
+                cliente.NomeCliente = strJson;
                 listClientes.Add(cliente);
-                cliente.NomeUser = strJson;
+                cliente.NomeCliente = strJson;
                 return listClientes;
             }
         }

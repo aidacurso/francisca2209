@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace atvlanchonete2209
 {
@@ -13,8 +14,16 @@ namespace atvlanchonete2209
         public Entrar()
         {
             InitializeComponent();
+            ExibirDados();
         }
+        User User = new User();
+        List<User> listUser = new List<User>();
 
+
+        private void ExibirDados()
+        {
+            listUser = User.carregarUser(@"C:\Bd\BdUser.json");
+        }
         private void linkLabelCadastrar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             CadastrarUser form3 = new CadastrarUser();
@@ -24,10 +33,28 @@ namespace atvlanchonete2209
 
         private void buttonLogar_Click(object sender, EventArgs e)
         {
-           // if ( se tiver no json)
-            //MessageBox.Show("login feito com sucesso");
-            //else (se n tiver)
-           // MessageBox.Show("credenciais erradas");
+            string login = textUsuario.Text;
+            var elem = listUser.Where<User>(x => x.NomeUser == login).FirstOrDefault();
+            int index = listUser.IndexOf(elem);
+
+            if (index == -1)
+            {
+                MessageBox.Show("os dados inseridos estão incorretos");
+            }
+            else
+            {
+                if (listUser[index].SenhaUser == textSenha.Text)
+                {
+                    MessageBox.Show("login realizado com sucesso");
+                    Home home = new Home();
+                    home.Show();    
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("os dados inseridos estão incorretos");
+                }
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
